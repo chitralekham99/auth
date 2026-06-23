@@ -38,6 +38,7 @@ public class AuthController {
 
        // String respons=userService.login(userDto);
         String token = userService.login(userDto);
+        System.out.println("i am checking");
         return ResponseEntity.ok(token);
       //  return ResponseEntity.ok(respons);
     }
